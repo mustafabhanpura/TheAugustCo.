@@ -1,0 +1,92 @@
+{% extends "cart/base.html" %}
+{% load staticfiles %}
+{% block css %}
+"{% static 'cart/cart.css' %}"
+{% endblock css %}
+
+{% block content %}
+    {% for a in order %}
+	<div class="item">
+		<div class="container">
+			<div class="row">
+				<div class="col-2">
+
+
+
+
+
+				</div>
+				<div class="col-10">
+
+					<div class="details">
+						<form>
+							  <div class="form-group row">
+							    <label for="staticName" class="col-sm-2 col-form-label" style="padding: 0px;margin:0px;">Name:</label>
+							    <div class="col-sm-10">
+							      <!--<input type="text" readonly class="form-control" id="staticName" value="$320" style="padding: 0px;margin:0px;width:70px;text-align:center;border-top:none;border-left: none;border-right: none;background-color: white;font-size: 12px;">-->
+
+								      <h5 style="padding: 0px;margin:0px;width:70px;text-align:center;border-top:none;border-left: none;border-right: none;background-color: white;font-size: 12px;">{{a.prod}}</h5>
+							    </div>
+							  </div>
+							  <div class="form-group row" >
+							    <label for="staticEmail" class="col-sm-2 col-form-label" style="padding: 0px;margin:0px;">Quantity:</label>
+							    <div class="col-sm-10">
+							      <!--<input type="number"  class="form-control" id="staticEmail" value="$320" style="padding: 0px;margin:0px;width:70px;text-align: center;border-top:none;border-left: none;border-right: none;font-size: 12px;">-->
+
+								      <h5 style="padding: 0px;margin:0px;width:70px;text-align:center;border-top:none;border-left: none;border-right: none;background-color: white;font-size: 12px;">{{a.quantity}}</h5>
+							    </div>
+							  </div>
+							  <div class="form-group row" >
+							    <label for="size" class="col-sm-2 col-form-label" style="padding: 0px;margin:0px;">Size:</label>
+							    <div class="col-sm-10">
+							      <h5 style="padding: 0px;margin:0px;width:70px;text-align:center;border-top:none;border-left: none;border-right: none;background-color: white;font-size: 12px;">{{a.size}}</h5>
+							    </div>
+							  </div>
+							  <div class="form-group row" >
+							    <label for="staticEmail" class="col-sm-2 col-form-label" style="padding: 0px;margin:0px;">Price:</label>
+							    <div class="col-sm-10">
+							 <h5 style="padding: 0px;margin:0px;width:70px;text-align:center;border-top:none;border-left: none;border-right: none;background-color: white;font-size: 12px;">Rs {{a.price}}</h5>
+							    </div>
+							  </div>
+
+							  <div class="form-group row">
+							    <label for="staticName" class="col-sm-2 col-form-label" style="padding: 0px;margin:0px;">Net Amount:</label>
+							    <div class="col-sm-10">
+							      <h5 style="padding: 0px;margin:0px;width:70px;text-align:center;border-top:none;border-left: none;border-right: none;background-color: white;font-size: 12px;">Rs {{a.net_amount}}</h5>
+							    </div>
+							  </div>
+
+
+
+						</form>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8">
+						<a href="{% url 'cart:add' a.id %}" style="float:left;"> Confirm</a>
+						</div>
+						<div class="col-sm-4">
+						<div class="del" style="margin:10px;float:right;">
+						<a href="{% url 'cart:delete' a.id %}" style="color: black;margin:20px; "><i class="far fa-trash-alt"></i></a>
+						</div>
+						</div>
+					</div>
+				</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+{% endfor %}
+
+
+
+
+
+
+
+	</div>
+{% endblock content %}

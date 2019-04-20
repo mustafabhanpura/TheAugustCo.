@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Home</title>
+    {% load staticfiles %}
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href={% block css %}  {% endblock css %}>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: #EDF5E1;">
+<div class="bod">
+<div class="divide">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #EDF5E1;
+}">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="nav navbar-nav justify-content-center">
+      <li class="nav-item active" style="float: right;">
+        <a class="nav-link" href="#"><i class="fas fa-home"></i>Home <span class="sr-only">(current)</span>
+        </a>
+
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i>My Cart</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact us</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+</div>
+
+
+
+<form method="post">
+    {% csrf_token %}
+<div class="search">
+ <div class="input-group col-md-4" style="background-color: #EDF5E1;
+}">
+            <input class="form-control py-2 border-right-0 border" type="search" placeholder="search" id="example-search-input" name="example-search-input">
+            <span class="input-group-append">
+                <button class="btn btn-outline-secondary border-left-0 border" type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+              </span>
+
+</div>
+</div>
+</form>
+<br><br>
+{% block content %}
+    {% endblock content %}
+</body>
+</html>

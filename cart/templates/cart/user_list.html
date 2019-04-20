@@ -1,0 +1,40 @@
+{% extends "cart/base.html" %}
+{% load staticfiles %}
+{% block css %}
+"{% static 'cart/index1.css' %}"
+{% endblock css %}
+
+{% block content %}
+
+
+<div class="search-ans">
+	<div class="container">
+		<div class="row">
+			{% for a in item %}
+  			<div class="col-sm">
+  				<div class="img1">
+
+                    <a href="{% url 'cart:detail' a.id %}">
+  					<h5 >{{a.product_name}}</h5>
+  					<h6 >{{a.price}}</h6>
+  					 </a>
+				</div>
+
+
+            </div>
+				<!--<div class="price">
+					<h6>Price</h6>
+				</div> -->
+			{% endfor %}
+			</div>
+
+
+
+		</div>
+	</div>
+
+
+
+</div>
+</div>
+{% endblock content %}

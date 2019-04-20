@@ -1,0 +1,88 @@
+
+body{
+	background-color: #EDF5E1;
+}
+.search{
+		display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	  display: -ms-flexbox;  /* TWEENER - IE 10 */
+	  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+	  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+	 
+	  justify-content: center;
+	  align-items: center;
+  
+}
+nav{
+	padding: 0px;
+}
+
+.input-group{
+	padding-top: 100px;
+	
+}
+.collapse{
+	  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+	  width: auto;
+	  justify-content: center;
+	  align-items: center;
+}
+
+.img{
+	
+	
+	width:100px;
+	height: auto;
+	
+}
+img{
+	padding: 0px;
+	margin:0px;
+	width: 100px;
+	height: auto;
+	/*transform: scale(1.5);*/
+}
+.item{
+		
+	width: 50%;
+	height:auto;
+	margin-left: 40px;
+	margin-top: 30px;
+	background-color:white;
+	padding: 15px;
+	/*box-shadow:4px 0px 4px 5px gray;*/	 
+
+
+}
+
+.col{
+	padding: 0px;
+}
+.details{
+	padding:0px;
+	margin: 0px;
+	width: 100%;
+	height: auto;
+	
+}
+.form-group{
+	font-size: 12px;
+	display:inline;
+}
+.form-control{
+	padding: 0px;
+	margin:0px;
+	width:70px;
+	text-align: center;
+	border-top:none;
+	border-left: none;
+	border-right: none;
+	background-color: white;
+	font-size: 12px;
+}
+.ico{
+	font-size: 14.5px;
+	
+}
+.del{
+	float: right;
+}

@@ -1,0 +1,290 @@
+
+{% extends 'cart/base.html' %}
+{% load staticfiles %}
+
+
+
+{% block css %}
+"{% static 'cart/item.css' %}"
+{% endblock css %}
+{% block content %}
+<h3 style="text-align:center;">{{val.product_name}}</h3>
+<div class="mid">
+				<div class="content">
+
+
+					<div class="size" id="button" style="display: inline;">
+
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg" style="width: auto;height: auto;font-size: 15px;margin-left:0px;">Size Chart</button>
+
+
+
+				<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+				  <div class="container">
+				  <div class="row">
+
+				  	<div class="col">
+						<img src="./z.png">
+				    </div>
+				    <div class="col-6">
+
+
+
+							 	<table class="table table-striped" style="width:auto;">
+							  	<thead>
+							    <tr>
+								      <th scope="col">No.</th>
+							      <th scope="col">Size</th>
+							      <th scope="col">Bust(Inches)</th>
+
+							    </tr>
+							  	</thead>
+							 		 <tbody>
+							    		<tr>
+							      		<th scope="row">1</th>
+							      		<td>2</td>
+							      		<td>34.5</td>
+							    		</tr>
+							    		<tr>
+							      		<th scope="row">2</th>
+							      		<td>4</td>
+							      		<td>35.5</td>
+
+							    		</tr>
+							    		<tr>
+							      		<th scope="row">3</th>
+							      		<td>6</td>
+							     	 	<td>36.5</td>
+							    		</tr>
+							  		</tbody>
+								</table>
+					</div>
+
+					<div class="col">
+								<table class="table table-striped">
+							  	<thead>
+							    <tr>
+							      <th scope="col">No.</th>
+							      <th scope="col">Size</th>
+							      <th scope="col">Bust(Inches)</th>
+
+				   					 </tr>
+				  					</thead>
+				 					 <tbody>
+				    				<tr>
+				      				<th scope="row">1</th>
+				      				<td>2</td>
+				      				<td>34.5</td>
+				    				</tr>
+				    				<tr>
+				      				<th scope="row">2</th>
+				      				<td>4</td>
+				      				<td>35.5</td>
+
+				    				</tr>
+				    				<tr>
+				      				<th scope="row">3</th>
+				      				<td>6</td>
+				     	 			<td>36.5</td>
+				    				</tr>
+				  					</tbody>
+							</table>
+						</div>
+
+				  		</div>
+							</div>
+
+							</div>
+						</div>
+
+							</div>
+
+						</div>
+						<div class="btn-group" style="margin-left: 20px;">
+
+  					<div class="dropdown-menu">
+    					<p style="text-align: center; font-size: 14px;">
+    						<a href="#" style="text-decoration: none;">1</a>
+    					</p>
+  					</div>
+				</div>
+
+					</div>
+				</div>
+			</div>
+
+
+				<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+				  <div class="container">
+				  <div class="row">
+
+				  	<div class="col">
+						<img src="./z.png">
+				    </div>
+				    <div class="col-6">
+
+
+
+							 	<table class="table table-striped">
+							  	<thead>
+							    <tr>
+								      <th scope="col">No.</th>
+							      <th scope="col">Size</th>
+							      <th scope="col">Bust(Inches)</th>
+
+							    </tr>
+							  	</thead>
+							 		 <tbody>
+							    		<tr>
+							      		<th scope="row">1</th>
+							      		<td>2</td>
+							      		<td>34.5</td>
+							    		</tr>
+							    		<tr>
+							      		<th scope="row">2</th>
+							      		<td>4</td>
+							      		<td>35.5</td>
+
+							    		</tr>
+							    		<tr>
+							      		<th scope="row">3</th>
+							      		<td>6</td>
+							     	 	<td>36.5</td>
+							    		</tr>
+							  		</tbody>
+								</table>
+					</div>
+
+					<div class="col">
+								<table class="table table-striped">
+							  	<thead>
+							    <tr>
+							      <th scope="col">No.</th>
+							      <th scope="col">Size</th>
+							      <th scope="col">Bust(Inches)</th>
+
+				   					 </tr>
+				  					</thead>
+				 					 <tbody>
+				    				<tr>
+				      				<th scope="row">1</th>
+				      				<td>2</td>
+				      				<td>34.5</td>
+				    				</tr>
+				    				<tr>
+				      				<th scope="row">2</th>
+				      				<td>4</td>
+				      				<td>35.5</td>
+
+				    				</tr>
+				    				<tr>
+				      				<th scope="row">3</th>
+				      				<td>6</td>
+				     	 			<td>36.5</td>
+				    				</tr>
+				  					</tbody>
+							</table>
+						</div>
+
+				  		</div>
+							</div>
+
+							</div>
+						</div>
+
+							</div>
+
+						</div>
+						<div class="btn-group" style="margin-left: 20px;">
+
+  					<div class="dropdown-menu">
+    					<p style="text-align: center; font-size: 14px;">
+    						<a href="#" style="text-decoration: none;">1</a>
+    					</p>
+  					</div>
+				</div>
+
+					</div>
+				</div>
+			</div>
+
+
+
+<br><br><br><br><br><br>
+<div class="quants">
+	<form method="post">
+				{% csrf_token %}
+
+
+
+
+		<!--<h6 style="padding-left:40px;">Size Selection:</h6>-->
+
+
+  <div class="form-group row">
+    <label for="price" class="col col-form-label" style="margin-top:12px;">Price:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="price" placeholder="" name="price" style=" border-right: none;
+      border-left: none;border-top: none;width:75% ;text-align: center;background-color: #EDF5E1;" value={{val.price}} readonly
+     >
+    </div>
+  </div>
+  <div class="form-group row">
+   <label for="quants" class="col col-form-label" style="margin-top:12px;">Quantity:</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control" id="quants" name="quants" placeholder="Quantity" style="border-right: none;
+      border-left: none;border-top: none; width:75%;text-align: center;background-color: #EDF5E1;"  required>
+    </div>
+  </div>
+
+		<div class="form-group row">
+		<div class="col-sm-10">
+		<label for="exampleFormControlSelect1" class="col-sm-2 col-form-label" >Size:</label>
+			<select class="form-control" id="exampleFormControlSelect1" name="exampleFormControlSelect1" placeholder="Size Selection" style="border-right: none;
+      border-left: none;border-top: none; width:75% ;text-align: center;background-color: #EDF5E1;"required>
+			<option></option>
+
+
+				{% for a,b in dict.items %}
+		{% if b %}
+      <option> {{a}}</option>
+				{% endif %}
+	{% endfor %}
+    </select>
+		</div>
+  </div>
+	<div class="form-group row">
+		<div class="col-sm-10">
+			<label for="disc" class="col-sm-2 col-form-label" style="margin-top:12px;display:flex;">Discount:</label>
+			<select class="form-control" id="disc" name="disc" placeholder="Size Selection" style="border-right: none;
+      border-left: none;border-top: none; width:75% ;text-align: center;background-color: #EDF5E1;"required>
+			<option>% Discount</option>
+			<option>Flat Discount</option>
+			<option>Final Price</option>
+			</select>
+			<br>
+			<div class="col-sm-10">
+      <input type="text" class="form-control" id="disc_val" name="disc_val" placeholder="Disount Value" style="border-right: none;
+      border-left: none;border-top: none; width:75%;text-align: center;background-color: #EDF5E1;" required>
+			</div>
+
+
+
+		</div>
+  </div>
+
+
+
+
+
+    </div>
+<br><br><br><br><br>
+<div class="apply">
+<button type="submit" class="btn btn-primary btn-lg btn-block" id="bn">Add To Cart</button>
+</div>
+</form>
+{% endblock content %}

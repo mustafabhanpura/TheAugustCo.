@@ -1,0 +1,58 @@
+
+body{
+	background-color: #EDF5E1;
+}
+.search{
+		display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	  display: -ms-flexbox;  /* TWEENER - IE 10 */
+	  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+	  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+	 
+	  justify-content: center;
+	  align-items: center;
+  
+}
+nav{
+	padding: 0px;
+}
+
+.input-group{
+	padding-top: 100px;
+	
+}
+.collapse{
+	  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+	  width: auto;
+	  justify-content: center;
+	  align-items: center;
+}
+
+
+.address{
+	width: 70%;
+	height:auto;
+	margin-left: 40px;
+	margin-top: 30px;
+	background-color:white;
+	padding: 15px;
+	
+}
+.inp{
+	width:auto;
+}
+.form-control{
+	width:auto;
+}
+
+.btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-right: 40px;
+}
+
+
+
+
+
+
